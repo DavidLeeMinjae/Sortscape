@@ -25,7 +25,8 @@ const Controls: React.FC = () => {
 
 <button
         onClick={resetArray}
-        className="px-4 py-2 bg-red-500 text-white rounded"
+        className={`px-4 py-2 bg-red-500 ${isAutoSorting && 'bg-gray-500'} text-white rounded focus:ring-2 focus:ring-violet-500`}
+        disabled={isAutoSorting}
       >
         Generate New Array
       </button>
