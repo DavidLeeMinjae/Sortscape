@@ -34,9 +34,7 @@ interface SortingContextProps {
     resetArray: () => void;
     selectedAlgorithm: string;
     setSelectedAlgorithm: React.Dispatch<React.SetStateAction<string>>;
-    rerender: boolean,
     algoInfo: AlgorithmInfo | null,
-    isSmallScreen: boolean,
 }
 
 const SortingContext = createContext<SortingContextProps | undefined>(undefined);
@@ -56,12 +54,8 @@ export const SortingProvider: React.FC<{ children: React.ReactNode }> = ({
     const [isAutoSorting, setIsAutoSorting] = useState(false);
     const [speed, setSpeed] = useState(50);
     const [selectedAlgorithm, setSelectedAlgorithm] = useState<string>(sortingAlgorithms["Bubble Sort"]);
-    const [rerender, setRerender] = useState(false);
     const [algoInfo, setAlgoinfo] = useState<AlgorithmInfo | null>(null);
-    const [isSmallScreen, setisSmallScreen] = useState(false);
-
     const currentAlgorithmGeneratorRef = useRef<Generator<number[]>>();
-
 
     useEffect(() => {
         resetArray();
@@ -148,10 +142,8 @@ export const SortingProvider: React.FC<{ children: React.ReactNode }> = ({
                 resetArray,
                 selectedAlgorithm,
                 setSelectedAlgorithm,
-                rerender,
                 pauseAutoSorting,
                 algoInfo,
-                isSmallScreen
             }}
         >
             {children}

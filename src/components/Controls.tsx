@@ -23,9 +23,9 @@ const Controls: React.FC = () => {
   return (
     <div className="mt-4 flex flex-col md:flex-row justify-center md:space-x-4 md:gap-0 gap-1">
 
-<button
+<button 
         onClick={resetArray}
-        className={`px-4 py-2 bg-red-500 ${isAutoSorting && 'bg-gray-500'} text-white rounded focus:ring-2 focus:ring-violet-500`}
+        className={`px-4 py-2 ${isAutoSorting ? 'bg-gray-500' : "bg-red-500"}  text-white rounded focus:ring-2 focus:ring-violet-500`}
         disabled={isAutoSorting}
       >
         Generate New Array
