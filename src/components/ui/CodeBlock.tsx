@@ -5,15 +5,15 @@ interface codeBlockProps {
   language?: string,
   showLineNumbers?: boolean,
 }
-
+  
 const CodeBlock: React.FC<codeBlockProps> = ({code, language = "javascript", showLineNumbers = true }) => {
   return (
     <CopyBlock
-      wrapLongLines={true}
       text={code}
       language={language}
       showLineNumbers={showLineNumbers}
       theme={dracula}
+      wrapLongLines={true}
     />
   )
 }
