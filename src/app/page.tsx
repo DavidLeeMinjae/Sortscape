@@ -15,7 +15,7 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-screen bg-slate-300 gap-8">
       <SortingProvider>
         <Header />
-        <div className="flex flex-col items-center justify-center w-full p-2">
+        <div className="flex flex-col items-center justify-center p-2 bg-neutral-900 w-[90%]">
           <Selector />
           <ArrayVisualizer />
           <Controls />

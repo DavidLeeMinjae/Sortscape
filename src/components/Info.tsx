@@ -12,7 +12,7 @@ const Info = ({...props}) => {
     return (
         <>
             {algoInfo && (
-                <div className="w-[90vw] 2xl:w-[35%] bg-white rounded-lg shadow-md p-6 ">
+                <div className="w-[90vw] bg-white rounded-lg shadow-md p-6 ">
                     <h2 className="text-xl font-semibold mb-2">{algoInfo.title}</h2>
                     <p className="text-gray-600 mb-4">{algoInfo.description}</p>        
                     <div>
