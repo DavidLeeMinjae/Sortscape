@@ -12,14 +12,9 @@ import React, {
 import { AlgorithmInfo, algorithmInfoRecord } from "@/utils/algorithmInfo";
 import {
   bubbleSort,
-  countingSort,
   generateRandomArray,
-  heapSort,
   insertionSort,
-  mergeSort,
   quickSort,
-  selectionSort,
-  shellSort,
 } from "@/utils/sortingAlgorithms";
 import { sortingAlgorithms } from "@/components/Selector";
 
@@ -34,13 +29,8 @@ type AlgorithmFunction = (
 
 const algorithmMap: Record<string, AlgorithmFunction> = {
   bubbleSort,
-  mergeSort,
   quickSort,
   insertionSort,
-  selectionSort,
-  heapSort,
-  shellSort,
-  countingSort,
 };
 
 interface SortingContextProps {

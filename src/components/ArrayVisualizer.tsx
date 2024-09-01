@@ -55,7 +55,7 @@ const ArrayVisualizer: FC = () => {
             />
             <motion.div
               className="absolute text-xs text-white -top-4 hidden md:block"
-              layoutId={`label-${idx}`} // Add layoutId
+              layoutId={`label-${idx}`} 
             >
               {height}
             </motion.div>

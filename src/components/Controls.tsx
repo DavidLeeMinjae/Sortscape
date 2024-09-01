@@ -57,9 +57,6 @@ const Controls: React.FC = () => {
         onChange={handleSpeedChange}
         className="w-40"
       />
-
-
-
     </div>
   );
 };

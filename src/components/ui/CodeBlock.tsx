@@ -3,10 +3,10 @@ import { CopyBlock, dracula } from "react-code-blocks";
 interface codeBlockProps {
   code: string,
   language?: string,
-  showLineNumbers?: boolean,
+  showLineNumbers?: boolean
 }
-  
-const CodeBlock: React.FC<codeBlockProps> = ({code, language = "javascript", showLineNumbers = true }) => {
+
+const CodeBlock: React.FC<codeBlockProps> = ({ code, language = "javascript", showLineNumbers = true }) => {
   return (
     <CopyBlock
       text={code}
@@ -18,5 +18,4 @@ const CodeBlock: React.FC<codeBlockProps> = ({code, language = "javascript", sho
   )
 }
 
-
-export default CodeBlock;
+export default CodeBlock

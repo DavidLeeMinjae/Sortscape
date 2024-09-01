@@ -17,15 +17,6 @@ export const algorithmInfoRecord: Record<string, AlgorithmInfo> = {
       space: "O(1)",
     },
   },
-  mergeSort: {
-    title: "Merge Sort",
-    description:
-      "A divide-and-conquer algorithm that recursively divides the list into smaller sublists until each sublist has one element, then merges the sublists in a manner that results in a sorted list.",
-    complexity: {
-      time: "O(n log n)",
-      space: "O(n)",
-    },
-  },
   quickSort: {
     title: "Quick Sort",
     description:

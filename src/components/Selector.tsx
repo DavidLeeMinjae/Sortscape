@@ -6,13 +6,8 @@ import { useSortingContext } from "@/context/sortingcontext";
 
 export enum sortingAlgorithms {
   "Bubble Sort" = "bubbleSort",
-  "Merge Sort" = "mergeSort",
   "Quick Sort" = "quickSort",
   "Insertion Sort" = "insertionSort",
-  "Selection Sort" = "selectionSort",
-  "Heap Sort" = "heapSort",
-  "Shell Sort" = "shellSort",
-  "Counting Sort" = "countingSort",
 }
 
 const AlgorithmSelector: React.FC = () => {
